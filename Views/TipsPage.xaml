@@ -1,0 +1,193 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" xmlns:PlanTechShenApp="clr-namespace:PlanTechShenApp"
+             x:Class="PlanTechShenApp.Views.TipsPage"
+             Title="Tips">
+
+    <Grid RowSpacing="0"
+          ColumnSpacing="0">
+        <Grid.RowDefinitions>
+            <RowDefinition />
+            <RowDefinition />
+            <RowDefinition />
+            <RowDefinition />
+            <RowDefinition />
+            <RowDefinition />
+           
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition />
+            <ColumnDefinition />
+            <ColumnDefinition />
+        </Grid.ColumnDefinitions>
+       
+        <BoxView Color="WhiteSmoke" />
+        <Label Text="PLANTS"
+               TextColor="Black"
+               FontSize="20"
+               FontAttributes="Bold"
+               HorizontalOptions="Start"
+               VerticalOptions="Start" />
+
+
+        <BoxView Grid.Column="1"
+                 Color="WhiteSmoke" />
+        <Label Grid.Column="1"
+               Text="GOOD NEIGHBOUR"
+               TextColor="Black"
+               FontSize="20"
+               FontAttributes="Bold"
+               HorizontalOptions="Center"
+               VerticalOptions="Start"/>
+
+        <BoxView Grid.Column="2"
+                 Color="WhiteSmoke" />
+        <Label Grid.Column="2"
+               Text="BAD NEIGHBOUR"
+               TextColor="Black"
+               FontSize="20"
+               FontAttributes="Bold"
+               HorizontalOptions="End"
+               VerticalOptions="Start" />
+
+        <BoxView Grid.Row="1"
+                 Color="CornflowerBlue" />
+        <Label Grid.Row="1"
+               Text="Asparagus"
+               HorizontalOptions="Center"
+               VerticalOptions="Center" />
+        <BoxView Grid.Row="1"
+                 Grid.Column="1"
+                 Color="DodgerBlue" />
+
+        <Label Grid.Row="1"
+               Grid.Column="1"
+               Text="tomato,   pepper,   potato,   brassicas,carrots, parsley"
+               HorizontalOptions="Center"
+               VerticalOptions="Center" />
+        <BoxView Grid.Row="1"
+                 Grid.Column="2"
+                 Color="DarkSlateBlue" />
+
+
+        <Label Grid.Row="1"
+               Grid.Column="2"
+               Text="legumes"
+               HorizontalOptions="Center"
+               VerticalOptions="Center" />
+        <BoxView Grid.Row="2"
+                 Color="SteelBlue" />
+
+        <Label Grid.Row="2"
+               Text="Basil"
+               HorizontalOptions="Center"
+               VerticalOptions="Center" />
+        <BoxView Grid.Row="2"
+                 Grid.Column="1"
+                 Color="LightBlue" />
+
+        <Label Grid.Row="2"
+               Grid.Column="1"
+               Text="pepper, tomato, asparagus, oregano"
+               HorizontalOptions="Center"
+               VerticalOptions="Center" />
+
+        <BoxView Grid.Row="2"
+                 Grid.Column="2"
+                 Color="GhostWhite" />
+        <Label Grid.Row="2"
+               Grid.Column="2"
+               Text="none"
+               HorizontalOptions="Center"
+               VerticalOptions="Center" />
+        
+        <BoxView Grid.Row="3"
+                 Grid.Column="0"
+                 Color="WhiteSmoke"/>
+        <Label Grid.Row="3"
+               Grid.Column="0"
+               Text="Beans, bush"
+               HorizontalOptions="Center"
+               VerticalOptions="Center"/>
+
+        <BoxView Grid.Row="3"
+                 Grid.Column="1"
+                 Color="WhiteSmoke"/>
+        <Label Grid.Row="3"
+               Grid.Column="1"
+               Text="cucumber, strawberry"
+               HorizontalOptions="Center"
+               VerticalOptions="Center"/>
+
+        <BoxView Grid.Row="3"
+                 Grid.Column="2"
+                 Color="WhiteSmoke"/>
+        <Label Grid.Row="3"
+               Grid.Column="2"
+               Text="dry beans"
+               HorizontalOptions="Center"
+               VerticalOptions="Center"/>
+
+        <BoxView Grid.Row="4"
+                 Grid.Column="0"
+                 Color="Aqua"/>
+        <Label Grid.Row="4"
+               Grid.Column="0"
+               Text="Beans, pole"
+               HorizontalOptions="Center"
+               VerticalOptions="Center"/>
+
+        <BoxView Grid.Row="4"
+                 Grid.Column="1"
+                 Color="Aqua"/>
+        <Label Grid.Row="4"
+               Grid.Column="1"
+               Text="corn, radishes, nasturtium, zinnia"
+               HorizontalOptions="Center"
+               VerticalOptions="Center"/>
+
+        <BoxView Grid.Row="4"
+                 Grid.Column="2"
+                 Color="Aqua"/>
+        <Label Grid.Row="4"
+               Grid.Column="2"
+               Text="sunflower, beet,brassicas"
+               HorizontalOptions="Center"
+               VerticalOptions="Center"/>
+
+        <BoxView Grid.Row="5"
+                 Grid.Column="0"
+                 Color="White"/>
+        <Label Grid.Row="5"
+               Grid.Column="0"
+               Text="Beets"
+               HorizontalOptions="Center"
+               VerticalOptions="Center"/>
+
+        <BoxView Grid.Row="5"
+                 Grid.Column="1"
+                 Color="DarkViolet"/>
+        <Label Grid.Row="5"
+               Grid.Column="1"
+               Text="bush beans, brassicas, lettuce, alliums"
+               HorizontalOptions="Center"
+               VerticalOptions="Center"/>
+
+        <BoxView Grid.Row="5"
+                 Grid.Column="2"
+                 Color="LavenderBlush"/>
+        <Label Grid.Row="5"
+               Grid.Column="2"
+               Text="pole beans"
+               HorizontalOptions="Center"
+               VerticalOptions="Center"/>
+
+
+
+        <BoxView Grid.Row="6"/>
+        <Button Text="start up"
+                Grid.Row="6"
+                Clicked="StartUpClicked"/>
+    </Grid>
+    
+</ContentPage>

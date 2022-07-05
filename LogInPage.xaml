@@ -1,0 +1,37 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<TabbedPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="PlanTechShenApp.LogInPage"
+            BackgroundColor="#A9d333">
+
+    <ContentPage Title="Log in">
+        <ContentPage.Content>
+
+            <StackLayout Orientation ="Vertical" Padding="65" Spacing="30">
+              
+                <BoxView HeightRequest="10"/>
+
+                <BoxView HeightRequest="15"/>
+                <Image HorizontalOptions="Center" WidthRequest="110" Source="contact.png"/>
+
+
+                <Entry x:Name="Email" Text="{Binding Email}" Placeholder="Email"
+                       PlaceholderColor="AntiqueWhite" HeightRequest="30"
+                       Keyboard="Email"
+                       TextColor="Black"/>
+
+                <Entry x:Name="Password" Text="{Binding Password}" Placeholder="Password"
+                       PlaceholderColor="AntiqueWhite" HeightRequest="30"
+                       IsPassword="True"
+                       TextColor="Black"/>
+
+
+                <Button Command="{Binding LoginCommand}" Text="Login" TextColor="BurlyWood"
+                   FontAttributes="Bold" FontSize="Large" HorizontalOptions="FillAndExpand"
+                        BackgroundColor="#CD6431"/>
+ 
+                    
+        </StackLayout>
+    </ContentPage.Content>
+    </ContentPage>
+</TabbedPage>

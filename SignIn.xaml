@@ -1,0 +1,46 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="PlanTechShenApp.SignIn"
+             Title="Sign up"
+             BackgroundColor="#CD6431">>
+    <ContentPage.Content>
+        <StackLayout Orientation="Vertical" Padding="50" Spacing="30">
+            
+            <Entry x:Name="Name" Text="{Binding FirstName}" Placeholder="First Name"
+                  PlaceholderColor="AntiqueWhite" HeightRequest="30"
+                   Keyboard="Text"
+                   TextColor="Black"/>
+
+            <Entry x:Name="Surname" Text="{Binding LastName}" Placeholder="Last Name"
+                  PlaceholderColor="AntiqueWhite" HeightRequest="30"
+                   Keyboard="Text"
+                   TextColor="Black"/>
+
+            <Entry x:Name="Email" Text="{Binding Email}" Placeholder="Email"
+                  PlaceholderColor="AntiqueWhite" HeightRequest="30"
+                   Keyboard="Email"
+                   TextColor="Black"/>
+
+            <Entry x:Name="Cellphone" Text="{Binding Cellphone}" Placeholder="Cellphone"
+                  PlaceholderColor="AntiqueWhite" HeightRequest="30"
+                   Keyboard="Telephone"
+                   TextColor="Black"/>
+
+            <Label Text="Password"
+                   TextColor="Black"
+                   FontSize="25"/>
+            <Entry x:Name="Password" />
+
+            <Label Text="Confirm password"
+                   TextColor="Black"
+                   FontSize="25"/>
+            <Entry x:Name="confirmpassword" />
+
+
+
+            <Button Text="Sign up"
+                Clicked="SignInClicked"/>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
